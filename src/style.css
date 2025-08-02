@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Agbalumo&family=Great+Vibes&display=swap");
+
+:root{
+    --header-color:rgb(118, 227, 118);
+    --font-color:white;
+    --logo-font:"Agbalumo",system-ui;
+    --line-font:"Great Vibes",serif;
+    --normal-font:"Times New Roman",serif;
+    --logo-size:2rem;
+    --tab-size:1.5rem;
+    --back-color:rgb(249, 247, 247);
+
+}
+
+img{
+    width: 40px;
+    height: auto;
+}
+
+
+body{
+    margin:0px;
+    padding: 0px;
+    background-color: var(--back-color);
+
+}
+
+#top{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    padding:10px 30px;
+    background-color: var(--header-color);
+    color:var(--font-color);
+    align-items: center;
+    box-shadow: 1px 2px 8px 2px rgb(47, 121, 51);
+
+}
+
+#name{
+    grid-column: 1/2;
+    justify-self: start;
+    font-family: var(--logo-font);
+    font-size: var(--logo-size);
+    display: flex;
+    align-items: center;
+}
+#name+div,
+#phone{
+    display: flex;
+    gap:10px;
+    align-items: center;
+}
+#name+div{
+    grid-column: 2/3;
+    justify-self: center;
+}
+
+
+nav>button{
+    background-color: var(--header-color);
+    color: var(--font-color);
+    border:none;
+    font-size: var(--tab-size);
+    font-weight: bold;
+
+}
+
+#phone{
+    grid-column: 3/4;
+    justify-self: end;
+    font-size: var(--tab-size);
+    font-weight: bold;
+}
+
+nav>button:hover{
+    border-bottom: 3px solid white;
+    border-radius: 1px;
+
+}
