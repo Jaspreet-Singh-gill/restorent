@@ -2,6 +2,9 @@ import "./style.css";
 console.log("Hello");
 
 import {home} from "./content/home.js";
+import {menu} from "./content/menu.js";
+import {contact} from "./content/contact.js";
+import { aboutus } from "./content/about.js";
 
 
 const parent = document.querySelector("#content");
@@ -39,18 +42,21 @@ button2.addEventListener("click",function(){
     removeDash();
     button2.classList.add("clicked");
     removeAllChild();
+    menu.create();
 });
 
 button3.addEventListener("click",function(){
     removeDash();
     button3.classList.add("clicked");
     removeAllChild();
+    contact.create();
 });
 
 button4.addEventListener("click",function(){
     removeDash();
     button4.classList.add("clicked");
     removeAllChild();
+    aboutus.create();
 });
 
 

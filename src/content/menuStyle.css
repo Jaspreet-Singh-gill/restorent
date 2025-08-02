@@ -1,0 +1,21 @@
+.menuList{
+    list-style: none;
+    font-size: calc(var(--normal-text)*1.2);
+    font-weight: bold;
+    align-self: self-start;
+    padding-left: 90px;
+
+
+}
+
+.sublistHeading{
+    list-style: none;
+    font-size: calc(var(--normal-text)*1.5);
+    font-weight: bold;
+    align-self: self-start;
+    padding-left: 30px;
+    font-family: var(--logo-font);
+    color :var(--header-color);
+
+}
+

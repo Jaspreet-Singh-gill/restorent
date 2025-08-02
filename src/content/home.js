@@ -36,6 +36,7 @@ const home = (function(){
         nodes.appendChild(listHeading);
 
         const list = document.createElement("ul");
+        list.classList.add("homeList");
         let str = "🌿 Fresh ingredients daily.🍛 Authentic Indian & fusion cuisine.🕯️ Cozy and elegant ambiance.🛵 Online ordering and home delivery.🧑‍🍳 Experienced chefs";
         str = str.split(".");
 

@@ -40,18 +40,18 @@
     align-self: flex-start;
     padding-left: 30px;
 }
-ul{
+.homeList{
     list-style: none;
     align-self: start;
 }
-li{
+.homeList>li{
     font-size: calc(var(--normal-text)*1.5);
     align-self: flex-start;
     padding-left: 30px;
     font-family: var(--logo-font);
 
 }
-li::first-letter{
+.homeList>li::first-letter{
     font-size: calc(var(--tab-size)*1.8);
 }
 
