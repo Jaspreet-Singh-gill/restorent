@@ -28,6 +28,10 @@ module.exports = {
                 test :/\.html$/,
                 loader:"html-loader",
 
+            },
+            {
+                test:/\.jpg$/,
+                type:"asset/resource"
             }
         ]
     }
