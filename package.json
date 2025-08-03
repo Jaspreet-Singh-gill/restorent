@@ -19,9 +19,17 @@
     "webpack-dev-server": "^5.2.2"
   },
   "scripts": {
-        "build":"webpack",
-        "dev": "webpack serve",
-        "deploy":"git subtree push --prefix dist origin gh-pages"
-
-    }
+    "build": "webpack",
+    "build": "webpack  --config webpack.prod.js",
+    "dev": "webpack serve --open",
+    "dev" :"webpack serve --open --config webpack.dev.js",
+    "deploy": "git subtree push --prefix dist origin gh-pages",
+    "greet": "node master.js",
+    "start-all": "npm run build & npm run greet",
+    "enviro": "node script.js"
+  },
+  "dependencies": {
+    "npm-run-all": "^4.1.5",
+    "webpack-merge": "^6.0.1"
+  }
 }
